@@ -1,0 +1,7 @@
+
+.settings-form[data-v-16809fd8]{
+  max-width: 700px;
+}
+
+.repeater-row[data-v-888cea76]{position:relative;margin-bottom:5px}.repeater-row-add[data-v-888cea76]{margin:10px 0;display:block}.repeater-row-add em[data-v-888cea76]{font-size:20px;vertical-align:text-bottom}.repeater-row-remove[data-v-888cea76]{position:absolute;top:50%;right:10px;transform:translateY(-50%)}
+.reset-field[data-v-32bc8a16]{display:inline-block;margin-left:10px;position:relative;top:1px;transition:.2s}@media(hover: hover){.reset-field[data-v-32bc8a16]{opacity:0}.form-group:hover .reset-field[data-v-32bc8a16]{opacity:1}}.field-type-group .form-group[data-v-32bc8a16]{margin-bottom:.2rem}

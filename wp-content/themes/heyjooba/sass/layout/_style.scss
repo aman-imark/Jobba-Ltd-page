@@ -1,0 +1,78 @@
+// a:focus-visible {
+//     outline: 2px dashed $cPrimary !important;
+// }
+
+.container {
+    @include breakpoint(largeDesktop) {
+        max-width: 1512px;
+    }
+}
+
+.bg-primary {
+    background-color: $cPrimary !important;
+
+    *{
+        color: $cWhite;
+    }
+}
+
+.color-primary {
+    color: $cPrimary !important;
+}
+
+.bg-secondary {
+    background-color: $cSecondary !important;
+
+    *{
+        color: $cWhite;
+    }
+}
+
+.bg-purple {
+    background-color: $cPurple !important;
+
+    *{
+        color: $cWhite;
+    }
+}
+
+.bgBlack {
+    background-color: $cBlack;
+}
+
+.bgWhite {
+    background-color: $cWhite;
+}
+
+.uSpace {
+    padding: 100px 0;
+}
+
+.uTSpace {
+    padding: 100px 0 0 0;
+}
+
+.uBSpace {
+    padding: 0 0 100px 0;
+}
+
+.common-heading{
+    text-align: center;
+    h2{
+        color: $cPrimary;
+
+        @include breakpoint (desktop){
+            font-size: 40px;
+        }
+        @include breakpoint (laptop){
+            font-size: 35px;
+        }
+    }
+    p{
+        margin-top: 17px;
+
+        @include breakpoint (desktop){
+            font-size: 21px;
+        }
+    }
+}

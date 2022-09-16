@@ -1,0 +1,149 @@
+header {
+    padding: 24px 0 0 0;
+    z-index: 999999;
+    position: relative;
+
+    .navbar {
+        padding: 0;
+
+        .navbar-brand {
+            padding: 0;
+            width: 228px;
+            height: 228px;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+            @include breakpoint (desktop){
+                width: 200px;
+                height: 200px;
+            }
+            @include breakpoint (laptop){
+                width: 180px;
+                height: 180px;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                z-index: 9;
+            }
+
+            svg {
+                width: 228px;
+                height: 228px;
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                @include breakpoint (desktop){
+                    width: 200px;
+                    height: 200px;
+                }
+                @include breakpoint (laptop){
+                    width: 180px;
+                    height: 180px;
+                }
+            }
+        }
+
+        .menubar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 144px;
+
+            @include breakpoint (desktop) {
+                margin-left: 60px;
+            }
+
+            @include breakpoint (laptop) {
+                margin-left: 30px;
+            }
+
+            li {
+                margin-right: 48px;
+                margin-bottom: 0;
+
+                @include breakpoint (laptop) {
+                    margin-right: 30px;
+                }
+
+                a {
+                    font-size: 18px;
+                    color: $cWhite;
+                }
+
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+
+        .sing-btn {
+            margin-left: auto;
+        }
+    }
+}
+
+.style1 {
+    .navbar-brand {
+        svg {
+            filter: invert(75%) sepia(54%) saturate(678%) hue-rotate(108deg) brightness(89%) contrast(84%);
+        }
+    }
+
+    .menubar li a {
+        &:hover {
+            color: $cSecondary;
+        }
+    }
+
+    #navbarNav {
+        .btn {
+            background-color: $cPrimary;
+        }
+    }
+}
+
+.style2 {
+    .navbar-brand {
+        svg {
+            filter: invert(4%) sepia(80%) saturate(7237%) hue-rotate(218deg) brightness(105%) contrast(102%);
+        }
+    }
+
+    .menubar li a {
+        &:hover {
+            color: $cPrimary;
+        }
+    }
+
+    #navbarNav {
+        .btn {
+            background-color: $cPrimary;
+        }
+    }
+}
+
+.style3 {
+    .navbar-brand {
+        svg {
+            filter: invert(75%) sepia(54%) saturate(678%) hue-rotate(108deg) brightness(89%) contrast(84%);
+        }
+    }
+
+    .menubar li a {
+        &:hover {
+            color: $cSecondary;
+        }
+    }
+
+    #navbarNav {
+        .btn {
+            background-color: $cSecondary;
+        }
+    }
+}

@@ -1,0 +1,107 @@
+html {
+    font-size: rem(16px);
+    scroll-behavior: smooth;
+
+    @include breakpoint (desktop) {
+        font-size: rem(15px);
+    }
+}
+
+body {
+    font-family: $FontText;
+    font-weight: 400;
+    line-height: 1.7;
+    font-size: 16px;
+    color: $cPrimary;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $cPrimary;
+    line-height: 1.15;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: rem(96px);
+    line-height: 1.1;
+    color: $cPrimary;
+}
+
+h2 {
+    font-size: rem(48px);
+}
+
+h3 {
+    font-size: rem(36px);
+}
+
+h4 {
+    font-size: rem(32px);
+}
+
+h5 {
+    font-size: rem(28px);
+}
+
+h6 {
+    font-size: rem(25px);
+}
+
+p {
+    font-size: rem(24px);
+    font-weight: 400;
+    line-height: 1.41;
+    margin-bottom: 0;
+    color: $cPrimary;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px 0px 0px 0px;
+    list-style: none;
+
+    li {
+        font-size: rem(24px);
+        font-weight: 700;
+        line-height: 1.41;
+        margin-bottom: 10px;
+        color: $cWhite;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+
+    &:hover {
+        text-decoration: none;
+        outline: none;
+        color: $cPrimary;
+    }
+}
+
+p,
+ul li {
+    strong {
+        font-weight: 700;
+    }
+
+    a {
+        color: $cBlack;
+        font-weight: 500;
+
+        &:hover,
+        &:focus {
+            color: $cSecondary;
+        }
+    }
+}

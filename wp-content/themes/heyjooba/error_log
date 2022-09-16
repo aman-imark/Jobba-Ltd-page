@@ -1,0 +1,56 @@
+[09-Jul-2022 06:44:28 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/index.php on line 17
+[09-Jul-2022 06:45:19 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/index.php on line 17
+[30-Jul-2022 22:27:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/index.php on line 17
+[04-Aug-2022 05:55:43 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/index.php on line 17
+[04-Aug-2022 05:57:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/index.php on line 17
+[04-Aug-2022 05:57:44 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/index.php on line 17
+[04-Aug-2022 06:00:05 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/index.php on line 17
+[04-Aug-2022 06:00:45 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/index.php on line 17
+[04-Aug-2022 06:16:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/index.php on line 17
+[04-Aug-2022 06:25:17 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/index.php on line 17
+[04-Aug-2022 06:27:52 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/index.php on line 17
+[04-Aug-2022 06:29:09 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/index.php on line 17
+[04-Aug-2022 06:40:09 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/index.php on line 17
+[04-Aug-2022 06:41:30 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/index.php on line 17

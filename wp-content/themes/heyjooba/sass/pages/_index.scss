@@ -1,0 +1,476 @@
+.intro {
+    padding: 252px 0 0;
+    margin: -252px 0 0;
+    overflow: hidden;
+    position: relative;
+
+    .intro-head {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 96px;
+
+        h1 {
+            line-height: 1.21;
+
+            @include breakpoint (desktop) {
+                font-size: 70px;
+            }
+
+            @include breakpoint (laptop) {
+                font-size: 60px;
+            }
+        }
+
+        h2 {
+            margin-top: 24px;
+            text-align: center;
+
+            @include breakpoint (desktop) {
+                font-size: 35px;
+            }
+
+            @include breakpoint (laptop) {
+                font-size: 30px;
+            }
+        }
+    }
+
+    .chooseing {
+        margin: 96px 0;
+        text-align: center;
+
+        a {
+            max-width: 480px;
+            width: 100%;
+            margin-right: 24px;
+            position: relative;
+            z-index: 999999;
+
+            @include breakpoint (desktop) {
+                font-size: 16px;
+            }
+
+            &:last-child {
+                margin: 0;
+            }
+        }
+    }
+
+    .dashboard-img {
+        text-align: center;
+        margin-bottom: -480px;
+
+        &.big-img-1 {
+            margin-bottom: -335px;
+        }
+
+        figure {
+            margin: 0;
+
+            img {}
+        }
+    }
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        clip-path: polygon(0 32%, 100% 1%, 100% 99%, 0 66%);
+        background-color: #fff;
+        opacity: .1;
+        width: calc(50% + 50px);
+        height: 100%;
+        top: 0;
+    }
+
+    &::before {
+        right: 0;
+    }
+
+    &::after {
+        left: 0;
+        transform: scaleX(-1);
+    }
+}
+
+.platform {
+    .expert {
+        text-align: center;
+
+        h2 {
+            margin-bottom: 40px;
+
+            @include breakpoint (desktop) {
+                font-size: 40px;
+            }
+
+            @include breakpoint (laptop) {
+                font-size: 35px;
+            }
+        }
+
+        p {
+            @include breakpoint (desktop) {
+                font-size: 21px;
+            }
+        }
+    }
+}
+
+.city {
+    .city-intro {
+        text-align: center;
+        min-height: 473px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 76px 110px;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        p {
+            padding-bottom: 40px;
+            line-height: 1.667;
+
+            @include breakpoint (desktop) {
+                font-size: 21px;
+            }
+
+            &:last-child {
+                padding-bottom: 0;
+            }
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            clip-path: polygon(0 32%, 100% 0%, 100% 100%, 0 66%);
+            background-color: #fff;
+            opacity: 0.05;
+            width: calc(50% + 50px);
+            height: 100%;
+            top: 0;
+        }
+
+        &::before {
+            right: 0;
+        }
+
+        &::after {
+            left: 0;
+            transform: scaleX(-1);
+        }
+    }
+}
+
+.free-join {
+
+    &.it-work {
+        .multiple-posts {
+            .posts {
+                p {
+                    &:last-child {
+                        color: $cWhite;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+
+    .multiple-posts {
+        margin: 90px 0;
+
+        .posts {
+            padding: 80px 24px;
+            min-height: 354px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            position: relative;
+
+            &.job {
+                &::before {
+                    background-image: url("../images/star-shape-4.svg");
+                }
+            }
+
+            &.join {
+                &:last-child {
+                    p {
+                        font-weight: 700;
+                        color: $cWhite;
+                    }
+                }
+
+                &::before {
+                    background-image: url("../images/star-shape-5.svg");
+                }
+            }
+
+            p {
+                color: $cPrimary;
+                padding-bottom: 19px;
+                text-align: center;
+                font-weight: 700;
+
+                @include breakpoint (desktop) {
+                    font-size: 21px;
+                }
+
+                &:last-child {
+                    padding-bottom: 0;
+                    font-weight: 400;
+                }
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                background-image: url("../images/star-shape-3.svg");
+                top: 0;
+                left: 0;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: 50%;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+            }
+        }
+    }
+}
+
+.postit {
+    text-align: center;
+    margin-top: 48px;
+}
+
+.recruitment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 472px;
+    position: relative;
+
+    .container {
+        position: relative;
+    }
+
+    .find-out {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        max-width: 1252px;
+        margin: 0 auto;
+
+        h2{
+            @include breakpoint (desktop){
+                font-size: 40px;
+            }
+        }
+    }
+
+    &::before {
+        content: "";
+        height: 100%;
+        width: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        opacity: 0.1;
+        clip-path: polygon(0 18%, 25% 0, 100% 0, 100% 100%, 25% 100%, 0 82%);
+        transform: scaleX(-1);
+    }
+
+    &.right {
+        &::before {
+            left: 50%;
+            transform: none;
+        }
+    }
+}
+
+.payment {
+    .p-bar {
+
+        ul {
+            margin: 48px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            li {
+                color: $cPrimary;
+                margin: 0;
+            }
+        }
+
+        .ongoing-bar {
+            position: relative;
+
+            .progress {
+                // height: 8px;
+                height: auto;
+                overflow: visible;
+                border-radius: 0;
+                background: transparent;
+
+                .progress-color {
+                    background-color: $cPrimary;
+                    width: 40%;
+                }
+
+                input {
+                    height: 8px;
+                    background: #fff;
+                    border-radius: 8px;
+                    border: none;
+
+                    &::-webkit-slider-thumb {
+                        -webkit-appearance: none;
+                        --thumb-size: 77px;
+                        @include rangeThumb;
+                        background-image: url('../images/p-arrow.png');
+                    }
+
+                    &::-moz-range-thumb {
+                        --thumb-size: 77px;
+                        @include rangeThumb;
+                        background-image: url('../images/p-arrow.png');
+                    }
+
+                    &::-ms-thumb {
+                        --thumb-size: 77px;
+                        @include rangeThumb;
+                        background-image: url('../images/p-arrow.png');
+                    }
+
+                    // Track
+                    &::-webkit-slider-runnable-track {
+                        @include rangeTrack;
+                    }
+
+                    &::-moz-range-track {
+                        @include rangeTrack;
+                    }
+
+                    &::-ms-track {
+                        @include rangeTrack;
+                    }
+
+                    &::-ms-track {
+                        // A little somethin' somethin' for IE
+                        width: 100%;
+                        cursor: pointer;
+                        background: transparent;
+                        border-color: transparent;
+                        color: transparent;
+                    }
+
+                    ::-moz-range-progress {
+                        background-color: $cPrimary;
+                    }
+                }
+            }
+
+            figure {
+                position: absolute;
+                top: -35px;
+                left: 37%;
+                margin: 0;
+                width: 77px;
+                height: 77px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+// recruiter
+
+.offer {
+    text-align: center;
+    position: relative;
+    min-height: 473px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        padding-bottom: 40px;
+        line-height: 1.667;
+
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+
+    &::before,
+    &::after {
+        content: "";
+        height: 100%;
+        width: calc(50% + 50px);
+        position: absolute;
+        top: 0;
+        background-color: #fff;
+        opacity: 0.05;
+        clip-path: polygon(50% 1%, 100% 34%, 100% 66%, 50% 100%, 0 66%, 0 34%);
+    }
+
+    &::before {
+        left: 0;
+    }
+
+    &::after {
+        right: 0;
+    }
+}
+
+.key {
+    .key-option {
+        margin-top: 96px;
+        text-align: center;
+
+        .keyone {
+            h3 {
+                color: $cSecondary;
+            }
+
+            figure {
+                margin: 30px 0;
+                width: 100px;
+                height: 100px;
+                background-color: $cPrimary;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 8px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: scale-down;
+                }
+            }
+
+            p {
+                font-weight: 700;
+                line-height: 1.417;
+            }
+        }
+    }
+}

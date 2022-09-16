@@ -1,0 +1,12 @@
+.modal-backdrop {
+    z-index: 9998;
+    background-color: $cPurple;
+
+    &.show {
+        opacity: 0.92;
+    }
+}
+
+.modal {
+    z-index: 9999;
+}

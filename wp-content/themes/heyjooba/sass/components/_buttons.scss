@@ -1,0 +1,64 @@
+.btn {
+    height: 48px;
+    font-size: rem(18px);
+    padding: 5px 10px;
+    min-width: 102px;
+    border-radius: 55px;
+    @include btn(700, initial);
+    @include transition;
+    background-color: $cBlack;
+    color: $cWhite;
+
+    &:hover,
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        box-shadow: 0 0.4em 0.5em -0.4em $cPrimary;
+        transform: translateY(-0.15em);
+        color: $cWhite;
+    }
+
+    &.btn-primary {
+        background-color: $cPrimary;
+        border: 1px solid $cPrimary;
+        color: $cWhite;
+        min-width: 272px;
+
+        &.br {
+            background-color: transparent;
+            border: 3px solid $cPrimary;
+            color: $cPrimary;
+        }
+    }
+
+    &.btn-secondary {
+        background-color: $cSecondary;
+        border: 1px solid $cSecondary;
+        color: $cWhite;
+        min-width: 272px;
+
+        &.br {
+            background-color: transparent;
+            border: 3px solid $cPrimary;
+            color: $cPrimary;
+        }
+    }
+    
+    &.btn-purple {
+        background-color: $cPurple;
+        border: 1px solid $cPurple;
+        color: $cWhite;
+        min-width: 272px;
+
+        &.br {
+            background-color: transparent;
+            border: 3px solid $cPrimary;
+            color: $cPrimary;
+        }
+    }
+    @include breakpoint (desktop){
+        font-size: 16px;
+    }
+}
