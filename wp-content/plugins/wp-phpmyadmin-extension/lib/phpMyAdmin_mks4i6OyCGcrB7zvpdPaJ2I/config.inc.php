@@ -10,7 +10,7 @@ $cfg['Servers'][$i]['port'] 			= '';
 $cfg['Servers'][$i]['connect_type'] 	= 'tcp';
 $cfg['Servers'][$i]['socket'] 			= '';
 $cfg['Servers'][$i]['AllowNoPassword']	= false;   // true/false
-$cfg['blowfish_secret']					= '**M0:y[\']9y7~`.6JyLZ#*XqS47s&0=g' ;  // i.e. '$b~`lnkwm>^^jNUEE;(4xB$L\'b?."\'o9' 
+$cfg['blowfish_secret']					= '*4wFXH/+~7J>VS`yDLf873;6tS5moK<[' ;  // i.e. '$b~`lnkwm>^^jNUEE;(4xB$L\'b?."\'o9' 
 $cfg['DefaultLang']						= 'en';		// 'en'
 $cfg['Servers'][$i]['only_db']			= [file_get_contents(__DIR__."/_session_temp_db_name_".$_SERVER["HTTP_HOST"].".php")] ;    //i.e. array('db1', 'db2') Show only listed databases
 $cfg['PmaAbsoluteUri'] 					= '/wp-content/plugins/wp-phpmyadmin-extension/lib/phpMyAdmin_mks4i6OyCGcrB7zvpdPaJ2I/';			//used, if different directory by htaccess ; or parse_url($GLOBALS['PMA_PHP_SELF']);
@@ -26,8 +26,8 @@ $cfg['Servers'][$i]['auth_type']	= 'signon'; //cookie | signon | ...
 //$cfg['LoginCookieValidity']			= 14400;
 $cfg['Servers'][$i]['SignonSession']= 'SignonSession';
 $cfg['SessionSavePath'] = sys_get_temp_dir(); $cfg['Servers'][$i]['SessionSavePath'] = $cfg['SessionSavePath'];
-$cfg['Servers'][$i]['SignonURL']    = 'https://heyjooba.customerdevsites.com/wp-admin/?rand=23317472&goto_wp_phpmyadmin=1';
-$cfg['Servers'][$i]['LogoutURL']    = 'https://heyjooba.customerdevsites.com/wp-admin/?rand=18227927&pma_logout=1';
+$cfg['Servers'][$i]['SignonURL']    = 'https://heyjooba.customerdevsites.com/wp-admin/?rand=97863633&goto_wp_phpmyadmin=1';
+$cfg['Servers'][$i]['LogoutURL']    = 'https://heyjooba.customerdevsites.com/wp-admin/?rand=7424992&pma_logout=1';
 //$cfg['Servers'][$i]['user']		= 'User for config authDocumentation Leave empty if not using config auth.';
 //$cfg['Servers'][$i]['password']	= 'Password for config authDocumentation Leave empty if not using config auth.';
 $cfg['Servers'][$i]['DisableIS']	= true;  //disable information schema

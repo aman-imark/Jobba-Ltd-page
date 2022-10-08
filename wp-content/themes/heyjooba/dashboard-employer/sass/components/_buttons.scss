@@ -1,0 +1,41 @@
+.btn {
+    background: $btn-clr;
+    border: 1px solid $btn-clr;
+    color: $color-W;
+    font-family: $montserrat;
+    font-weight: $bold;
+    border-radius: 5px;
+    font-size: 21px;
+    padding: 0 28px;
+    line-height: 2.6;
+    @include transition;
+    box-shadow: none;
+    outline: none;
+
+    @include breakpoint(desktop) {
+        font-size: 18px;
+        line-height: 2.4;
+        padding: 0 25px;
+    }
+
+    &.active {
+        background: $color-secondery;
+        border-color: $color-B;
+        color: $color-W;
+
+        &:hover {
+            background: $btn-clr;
+            border: $btn-clr;
+            color: $color-W;
+        }
+    }
+
+    &:focus,
+    &:hover {
+        background: $color-secondery;
+        border-color: $color-B;
+        color: $color-B;
+        box-shadow: none;
+        outline: none;
+    }
+}

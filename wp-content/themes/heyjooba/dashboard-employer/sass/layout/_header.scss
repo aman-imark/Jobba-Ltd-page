@@ -1,0 +1,266 @@
+#header {
+  background: $color-primary;
+  padding: 15px 0;
+  border-bottom: 2px solid $color-secondery;
+
+  &.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 7;
+
+    -webkit-animation-duration: 500ms;
+    animation-duration: 500ms;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+
+    .sign-up {
+      .btn {
+        font-size: 21px;
+        padding: 0 42px;
+        @include transition;
+      }
+    }
+
+    .navbar {
+      .logo {
+        a {
+          width: 132px;
+          @include transition;
+        }
+      }
+    }
+  }
+
+  .sign-up {
+    .btn {
+      font-size: 28px;
+      padding: 0 62px;
+      border-radius: 8px;
+
+      @include breakpoint(desktop) {
+        font-size: 22px;
+        padding: 0 40px;
+        line-height: 2.4;
+      }
+    }
+  }
+
+  .navbar {
+    padding: 0;
+
+    .logo {
+      margin-left: 82px;
+
+      a {
+        display: block;
+
+        @include breakpoint(desktop) {
+          width: 132px;
+        }
+      }
+    }
+
+    .lft-nav {
+      display: flex;
+      align-items: center;
+    }
+
+    .button_nav {
+      height: 27px;
+      width: 42px;
+      cursor: pointer;
+      z-index: 100;
+      position: absolute;
+      transition: opacity .25s ease;
+
+      &:hover {
+        opacity: .7;
+      }
+
+      &.active {
+        .top {
+          transform: translateY(12px) translateX(0) rotate(45deg);
+          background: $color-B;
+        }
+
+        .middle {
+          opacity: 0;
+          background: $btn-clr;
+        }
+
+        .bottom {
+          transform: translateY(-12px) translateX(0) rotate(-45deg);
+          background: $color-B;
+        }
+      }
+
+      span {
+        background: $btn-clr;
+        border: none;
+        border-radius: 4px;
+        height: 5px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all .35s ease;
+        cursor: pointer;
+
+        &:nth-of-type(2) {
+          top: 12px;
+        }
+
+        &:nth-of-type(3) {
+          top: 24px;
+        }
+      }
+    }
+
+    .overlay {
+      position: fixed;
+      background: rgba(123, 252, 160, 0.92);
+      z-index: 5;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 0%;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity .35s, visibility .35s, height .35s;
+      overflow: hidden;
+
+      &.open {
+        opacity: 1;
+        visibility: visible;
+        height: 100%;
+
+        li {
+          animation: fadeInRight .5s ease forwards;
+          animation-delay: .35s;
+
+          &:nth-of-type(2) {
+            animation-delay: .4s;
+          }
+
+          &:nth-of-type(3) {
+            animation-delay: .45s;
+          }
+
+          &:nth-of-type(4) {
+            animation-delay: .50s;
+          }
+
+          &:nth-of-type(5) {
+            animation-delay: .55s;
+          }
+
+          &:nth-of-type(6) {
+            animation-delay: .60s;
+          }
+        }
+      }
+
+      nav {
+        position: relative;
+        height: 70%;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 auto;
+        display: inline-block;
+        position: relative;
+        height: 100%;
+
+        li {
+          display: block;
+          position: relative;
+          opacity: 0;
+          margin-bottom: 32px;
+
+          a {
+            display: block;
+            position: relative;
+            font-size: 42px;
+            font-weight: $semi-bold;
+            color: $color-B;
+            text-decoration: none;
+            overflow: hidden;
+
+            @include breakpoint(desktop) {
+              font-size: 32px;
+            }
+
+            &:hover:after,
+            &:focus:after,
+            &:active:after {
+              width: 100%;
+            }
+
+            &:after {
+              content: '';
+              position: absolute;
+              bottom: 0;
+              left: 50%;
+              width: 0%;
+              transform: translateX(-50%);
+              height: 3px;
+              background: $color-B;
+              transition: .35s;
+            }
+          }
+        }
+      }
+    }
+
+    @keyframes fadeInRight {
+      0% {
+        opacity: 0;
+        left: 20%;
+      }
+
+      100% {
+        opacity: 1;
+        left: 0;
+      }
+    }
+  }
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}

@@ -1,0 +1,13 @@
+/*For Developer Use*/
+input.form-control.invalid, select.form-control.invalid {
+    border: 1px solid red !important;
+}
+
+.employer-dashboard .tracking-table-wrap .tracking-table tbody tr td .applicant-content {
+    background-color: #edfef9;
+}
+
+.add-skills-content.chooses11{
+    min-height: 50px !important;
+    height: 100% !important;
+}

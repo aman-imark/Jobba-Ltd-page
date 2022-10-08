@@ -5,6 +5,12 @@ Template Name:Signup
 include(TEMPLATEPATH.'/header-login.php'); 
 
 ?>
+<style type="text/css">
+  header.login-header {
+      display: none;
+  }
+</style>
+
   <div class="login">  <!-- style="background-image: url('<?php echo get_template_directory_uri();?>/dashboard-employer/images/login-banner.jpg');" -->
     <div class="container">
       <div class="log-ctnt employer-account">

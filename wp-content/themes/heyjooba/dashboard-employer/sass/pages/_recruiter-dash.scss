@@ -1,0 +1,627 @@
+.employer-dashboard {
+    .counter-wrap {
+        .my-row {
+            .counter-content {
+                &:hover {
+                    background-color: $employer-color;
+                }
+            }
+        }
+    }
+}
+
+.counter-wrap {
+    padding: 0 120px;
+
+    &.cmn-mg-btm {
+        @include breakpoint(desktop) {
+            margin-bottom: 0px;
+        }
+    }
+
+    &.three-items {
+        .my-row {
+            .counter-content {
+                width: calc(100%/3 - 26px);
+
+                @include breakpoint(desktop) {
+                    width: calc(100%/3 - 16px);
+                }
+            }
+        }
+    }
+
+    &.five-items {
+        .my-row {
+            .counter-content {
+                width: calc(100%/5 - 26px);
+
+                @include breakpoint(desktop) {
+                    width: calc(100%/5 - 16px);
+                }
+            }
+        }
+    }
+    
+    .my-row {
+        display: flex;
+        flex-wrap: wrap;
+        // justify-content: space-between;
+        margin: 0 -13px;
+
+        @include breakpoint(desktop) {
+            margin: 0 -8px;
+        }
+
+        .counter-content {
+            text-align: center;
+            width: calc(100%/6 - 26px);
+            margin: 0 13px;
+            padding: 30px 4px;
+            // display: flex;
+            // flex-wrap: wrap;
+            // justify-content: center;
+            // align-items: center;
+            cursor: pointer;
+            transition: all ease-in-out 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            @include breakpoint(desktop) {
+                padding: 30px 4px;
+                width: calc(100%/6 - 16px);
+                margin: 0 8px;
+                margin-bottom: 30px;
+            }
+
+            &:hover {
+                background-color: $recruiter-color;
+
+                h3,
+                h6 {
+                    color: #fff;
+                }
+            }
+
+            h3 {
+                font-size: 36px;
+                font-weight: 700;
+                margin: 0;
+                color: #08173d;
+                margin-bottom: 5px;
+                width: 100%;
+                transition: all ease-in-out 0.3s;
+
+                @include breakpoint(my-x-large) {
+                    font-size: 22px;
+                }
+
+                @include breakpoint(desktop) {
+                    font-size: 20px;
+                }
+            }
+
+            h6 {
+                color: #08173d;
+                font-size: 19px;
+                font-weight: 600;
+                margin: 0;
+                width: 100%;
+                transition: all ease-in-out 0.3s;
+
+                @include breakpoint(my-x-large) {
+                    font-size: 14px;
+                }
+
+                @include breakpoint(desktop) {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+.employer-dashboard {
+    .cmn-jobs {
+        .cmn-job-table-wrap {
+            .csm-job-table {
+                thead {
+                    tr {
+                        background-color: $employer-light-color;
+
+                        th {
+
+                            color: $employer-color;
+
+                            &:first-child {
+
+                                &::before {
+                                    background-color: $employer-light-color;
+                                }
+                            }
+
+                            &:last-child {
+
+                                &::after {
+                                    background-color: $employer-light-color;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                tbody {
+                    tr {
+
+                        &.table-data-bg {
+                            td {
+                                background-color: $employer-extra-light-color;
+
+                                &:first-child {
+                                    &:before {
+                                        background-color: $employer-extra-light-color;
+                                    }
+                                }
+
+                                &:last-child {
+                                    &:after {
+                                        background-color: $employer-extra-light-color;
+                                    }
+                                }
+
+                            }
+                        }
+
+                        td {
+                            .my-btn {
+                                background-color: $employer-color;
+                                border-color: $employer-color;
+
+                                &:hover,
+                                &:focus {
+                                    background-color: #c5c5c5;
+                                    border-color: #c5c5c5;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.cmn-jobs {
+
+    .cmn-job-table-wrap {
+        padding: 0 22px 22px;
+        overflow: auto;
+
+        @include breakpoint(desktop) {
+            padding: 0 20px 20px;
+        }
+
+        .csm-job-table {
+            width: 100%;
+
+            thead {
+                tr {
+                    background-color: $recruiter-light-color;
+
+
+                    th {
+                        padding: 25px 12px;
+                        position: relative;
+                        height: 96px;
+                        white-space: nowrap;
+
+                        @include breakpoint(desktop) {
+                            padding: 10px 5px;
+                            height: 56px;
+                        }
+
+                        &:first-child {
+                            &::before {
+                                content: "";
+                                height: 100%;
+                                width: 22px;
+                                position: absolute;
+                                top: 0;
+                                left: -22px;
+                                background-color: $recruiter-light-color;
+                                z-index: 1;
+                            }
+                        }
+
+                        &:last-child {
+                            text-align: center;
+
+                            &::after {
+                                content: "";
+                                height: 100%;
+                                width: 22px;
+                                position: absolute;
+                                top: 0;
+                                right: -22px;
+                                background-color: $recruiter-light-color;
+                                z-index: 1;
+                            }
+                        }
+                    }
+                }
+            }
+
+            tbody {
+                tr {
+                    border-bottom: 1px solid #eeeeee;
+
+                    &:last-child {
+                        border-bottom-color: transparent;
+
+                        // & td {
+                        //     padding-bottom: 15px;
+                        // }
+                    }
+
+                    &.table-data-bg {
+                        border-bottom: none;
+                        border-top: 25px solid transparent;
+
+                        td {
+                            background-color: $recruiter-extra-light-color;
+
+                            &:first-child {
+                                &::before {
+                                    content: "";
+                                    height: 100%;
+                                    width: 22px;
+                                    position: absolute;
+                                    top: 0;
+                                    left: -22px;
+                                    background-color: $recruiter-extra-light-color;
+                                    z-index: 1;
+                                }
+                            }
+
+                            &:last-child {
+                                text-align: center;
+
+                                &::after {
+                                    content: "";
+                                    height: 100%;
+                                    width: 22px;
+                                    position: absolute;
+                                    top: 0;
+                                    right: -22px;
+                                    background-color: $recruiter-extra-light-color;
+                                    z-index: 1;
+                                }
+                            }
+                        }
+                    }
+
+                    td {
+                        font-size: 14px;
+                        font-weight: 600;
+                        color: #000;
+                        padding: 15px 12px;
+                        position: relative;
+                        height: 50px;
+                        white-space: nowrap;
+
+                        p {
+                            display: inline-block;
+                            font-size: 14px;
+                            font-weight: 600;
+                            margin: 0;
+                            vertical-align: middle;
+                            line-height: 1.4;
+
+                            span {
+                                display: block;
+                                font-size: 12px;
+                                color: #868686;
+                            }
+                        }
+
+                        @include breakpoint(desktop) {
+                            padding: 10px 5px;
+                            height: 56px;
+                        }
+
+                        &:last-child {
+                            text-align: center;
+                        }
+
+                        .my-btn {
+                            min-width: 106px;
+                            font-size: 13px;
+                            line-height: 33px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.my-flex-heading {
+    padding: 30px;
+    padding-bottom: 25px;
+    display: flex;
+    align-items: center;
+
+    @include breakpoint(desktop) {
+        padding: 20px;
+    }
+
+    .cmn-job-heading {
+        margin: 0;
+        font-weight: 600;
+        font-size: 23px;
+        white-space: nowrap;
+
+        @include breakpoint(desktop) {
+            font-size: 18px;
+        }
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+        padding-left: 35px;
+        margin: 0;
+
+        li {
+            margin-left: -10px;
+
+            figure {
+                height: 40px;
+                width: 40px;
+                margin-bottom: 0;
+                border: 2px solid #fff;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                border-radius: 100%;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+.employer-dashboard {
+    .tracking-table-wrap {
+        overflow: auto;
+
+        .tracking-table {
+            thead {
+                tr {
+                    background-color: $employer-light-color;
+
+                    th {
+                        color: $employer-color;
+                    }
+                }
+            }
+
+            tbody {
+                tr {
+                    td {
+                        .applicant-content {
+                            background-color: $employer-extra-light-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.tracking-table-wrap {
+    .tracking-table {
+        width: 100%;
+        table-layout: fixed;
+
+        @include breakpoint(desktop) {
+            // table-layout: unset;
+        }
+
+        thead {
+            tr {
+                background-color: $recruiter-light-color;
+
+                th {
+                    text-align: center;
+                    padding: 30px 0;
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                &:first-child {
+                    td {
+                        padding-top: 35px;
+
+                        @include breakpoint(desktop) {
+                            padding-top: 25px;
+                        }
+                    }
+                }
+
+                td {
+                    padding: 0px 15px 30px;
+
+                    @include breakpoint(desktop) {
+                        padding: 0px 10px 25px;
+                    }
+
+
+                    .applicant-content {
+                        display: flex;
+                        flex-wrap: wrap;
+                        padding: 10px 10px 15px;
+                        background: $recruiter-extra-light-color;
+                        max-width: 216px;
+                        margin: auto;
+                        padding-top: 26px;
+                        position: relative;
+
+                        @include breakpoint(desktop) {
+                            max-width: 200px;
+                            padding: 10px 7px 15px;
+                            padding-top: 26px;
+                        }
+
+                        figure {
+                            width: 33px;
+                            height: 33px;
+                            margin-right: 15px;
+
+                            @include breakpoint(desktop) {
+                                margin-right: 5px;
+                                width: 25px;
+                                height: 25px;
+                            }
+                        }
+
+                        .applicant-match {
+                            font-size: 9px;
+                            font-weight: 500;
+                            color: #63c62e;
+                            display: inline-block;
+                            background-color: e7f6df;
+                            padding: 0 8px;
+                            line-height: 2;
+                            position: absolute;
+                            top: 5px;
+                            left: 58px;
+
+                            @include breakpoint(desktop) {
+                                left: 38px;
+                            }
+                        }
+
+                        .applicant-details {
+                            width: calc(100% - 33px - 15px);
+
+                            @include breakpoint(desktop) {
+                                width: calc(100% - 25px - 5px);
+                            }
+
+
+                            h6 {
+                                font-size: 16px;
+                                font-weight: 600;
+                                color: #000;
+                                margin: 0;
+
+                                @include breakpoint(desktop) {
+                                    font-size: 12px;
+                                }
+                            }
+
+                            p {
+                                font-size: 14px;
+                                font-weight: 600;
+                                color: #868686;
+                                margin: 0;
+                                line-height: 22px;
+
+                                @include breakpoint(desktop) {
+                                    font-size: 9px;
+                                    line-height: 18px;
+                                }
+
+                                span {
+                                    font-weight: 400;
+                                }
+                            }
+                        }
+
+                        .no-match-dots {
+                            position: absolute;
+                            top: 10px;
+                            right: 10px;
+                            height: 17px;
+                            width: 11px;
+                            margin: 0;
+
+                            img {
+                                height: 100%;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.select-check {
+    input[type="checkbox"] {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        pointer-events: none;
+
+        &:checked {
+            &~.check-box {
+                background-color: $recruiter-color;
+                border-color: $recruiter-color;
+
+                &::before {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .check-box {
+        display: block;
+        height: 25px;
+        width: 28px;
+        border: 1px solid #b8b8b8;
+        position: relative;
+        transition: all ease-in-out 0.3s;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 2px;
+            left: 9px;
+            height: 15px;
+            width: 7px;
+            border-right: 2px solid #fff;
+            border-bottom: 2px solid #fff;
+            transform: rotate(45deg);
+            transition: all ease-in-out 0.3s;
+            opacity: 0;
+        }
+    }
+}
+
+.active-candidates-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+
+    h6 {
+        margin: 0;
+        margin-left: auto;
+        font-weight: 600;
+    }
+
+    .my-btn {
+        margin-left: auto;
+    }
+}

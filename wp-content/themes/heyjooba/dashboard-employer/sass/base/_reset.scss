@@ -1,0 +1,234 @@
+/** RESET only css **/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+
+* {
+	margin: 0;
+	padding: 0;
+
+	&,
+	&:after,
+	&:before {
+		@include box-sizing;
+		font-kerning: none;
+	}
+}
+
+label {
+	font-weight: normal;
+}
+
+fieldset {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+input,
+select,
+textarea {
+	@include appearance(none);
+	background-clip: border-box;
+	margin: 0;
+	outline: 0;
+	vertical-align: top;
+	width: 100%;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+	width: auto;
+	height: auto;
+}
+
+input[type='checkbox'] {
+	appearance: checkbox;
+}
+
+input[type='radio'] {
+	appearance: radio;
+	vertical-align: -1px;
+}
+
+select[multiple],
+select[size],
+textarea {
+	height: auto;
+}
+
+// remove dropdown for IE10
+
+select::-ms-expand {
+	display: none;
+}
+
+//remove IE11 select element selected option state
+
+select:focus::-ms-value {
+	background-color: transparent;
+	color: inherit;
+}
+
+//Allow only vertical resizing of textareas
+
+textarea {
+	resize: vertical;
+}
+
+//remove search controls
+
+input[type='search']::-webkit-search-decoration {
+	display: none;
+}
+
+/* For Firefox */
+input[type='number'] {
+	-moz-appearance: textfield;
+}
+
+/* Webkit browsers like Safari and Chrome */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	@include transition;
+
+	&:hover,
+	&:focus {
+		text-decoration: none;
+	}
+}
+
+*:focus {
+	outline: none !important;
+}
+
+img {
+	max-width: 100%;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+em,
+i {
+	font-style: italic;
+}
+
+.clr {
+	border: 0;
+	clear: both;
+	height: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body,
+html {
+	width: 100%;
+	overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	font-weight: normal;
+	margin: 0;
+}
+
+section {
+	padding: rem(75px 0px);
+
+	@include breakpoint(desktop) {
+		padding: rem(55px 0);
+	}
+}
+
+.inline {
+	display: inline-block !important;
+}
+
+.block {
+	display: block !important;
+}
+
+.shown {
+	display: inline-block;
+
+	&.block {
+		display: block;
+	}
+}
+
+.hidden {
+	display: none;
+}
+
+.relative {
+	position: relative;
+}
+
+//Scrollbar styling for webkit
+::-webkit-scrollbar {
+	min-width: 7px;
+	width: 0.15%;
+	max-width: 7px;
+	height: 7px;
+}
+
+::-webkit-scrollbar,
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track-piece {
+	background: #ddd;
+}
+
+::-webkit-scrollbar-button,
+::-webkit-scrollbar-thumb {
+	background: $recruiter-color;
+}
+
+.employer-dashboard::-webkit-scrollbar-button,
+.employer-dashboard::-webkit-scrollbar-thumb,
+.employer-dashboard *::-webkit-scrollbar-button,
+.employer-dashboard *::-webkit-scrollbar-thumb {
+	background: $employer-color;
+}
+
+// .mCS-autoHide>.mCustomScrollBox>.mCSB_scrollTools, .mCS-autoHide>.mCustomScrollBox~.mCSB_scrollTools{
+// 	opacity: 1 !important;
+// }
+.mCustomScrollBox.mCS-minimal+.mCSB_scrollTools.mCSB_scrollTools_horizontal {
+	background-color: #bdbdbd;
+	opacity: 1;
+	height: 5px;
+	margin: 0;
+}
+
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_draggerRail {
+	margin: 0;
+	opacity: 0;
+}
+
+.mCS-minimal-dark.mCSB_scrollTools_horizontal .mCSB_dragger,
+.mCS-minimal.mCSB_scrollTools_horizontal .mCSB_dragger {
+	background-color: $color-primary;
+}
+
+// SVG reset
+svg:not(:root) {
+	height: 100%;
+	width: 100%;
+}

@@ -30,9 +30,20 @@ $name = get_user_meta($id, 'first_name', true);
 
 <body class="bg-white-grey">
     <section class="dashboard-section">
+        <div class="ipad-screen d-lg-none">
+            <div class="container">
+                <div class="ipad-logo">
+                    <a href="javascript:void(0);" class="icon-bar"><i class="fa fa-bars"></i></a>
+                    <a href="#" class="ipad-img">
+                        <img src="<?php echo get_template_directory_uri();?>/images/recut-logo.png">
+<!--                        Jobba-->
+                    </a>
+                </div>
+            </div>
+        </div>
         <div class="sidebar-wrapper">
             <div class="sidebar-wrap">
-                <div class="sidebar-brand-wrap">
+                <div class="sidebar-brand-wrap d-none d-lg-block">
                     <a href="#" class="sidebar-logo">
                         <img src="<?php echo get_template_directory_uri();?>/images/recut-logo.png">
 <!--                        Jobba-->

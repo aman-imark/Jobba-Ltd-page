@@ -1,0 +1,432 @@
+.employer-dashboard {
+    .messenger-wrap {
+        .messenger-sidebar {
+            .msg-search {
+                input {
+                    background-color: $employer-light-color;
+                }
+            }
+
+            .msg-list {
+                article {
+
+                    &:hover,
+                    &:focus {
+                        background-color: $employer-color;
+
+                        .messenger-details {
+                            p {
+                                color: #fff;
+
+                                b {
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .messenger-area {
+            .messenger-area-wrap {
+                .messenger-msg-wrap {
+                    .msg-wrap {
+                        &.right-msg {
+                            .msg-content {
+                                .main-msg {
+                                    p {
+                                        background-color: #fff;
+                                    }
+                                }
+                            }
+                        }
+
+                        .msg-content {
+                            .main-msg {
+                                p {
+                                    background-color: $employer-light-color;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.messenger-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    // margin: 0 -13px;
+
+    .form-heading {
+        width: 100%;
+        // padding: 0 13px;
+    }
+
+    .my-row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -13px;
+    }
+
+    .messenger-sidebar {
+        max-width: 375px;
+        padding: 0 13px;
+        width: 100%;
+
+        @include breakpoint(desktop) {
+            max-width: 275px;
+        }
+
+        .msg-search {
+            margin-bottom: 25px;
+            position: relative;
+
+            .search-icon {
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 15px;
+                transform: translateY(-50%);
+            }
+
+            input {
+                border: none;
+                background-color: $recruiter-light-color;
+                height: 50px;
+                padding: 0 45px;
+                font-weight: 600;
+                color: #000;
+                box-shadow: none;
+
+                &::placeholder {
+                    font-weight: 600;
+                    color: #000 !important;
+                }
+            }
+        }
+
+        .msg-toggle-btn {
+            display: none;
+        }
+
+        .msg-list {
+            border: 1px solid #dedede;
+            border-radius: 4px;
+            // max-height: calc(100vh - 180px);
+            overflow: auto;
+
+            article {
+                display: flex;
+                padding: 20px;
+                position: relative;
+                transition: all ease-in-out 0.3s;
+
+                @include breakpoint(desktop) {
+                    padding: 15px 10px;
+                }
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid #dedede;
+                }
+
+                &:hover,
+                &:focus {
+                    background-color: $recruiter-color;
+
+                    .messenger-details {
+                        p {
+                            color: #fff;
+
+                            b {
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+
+                a {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    z-index: 3;
+                }
+
+                figure {
+                    height: 50px;
+                    width: 50px;
+                    margin-right: 10px;
+                    margin-bottom: 0;
+                    border-radius: 100%;
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.messenger-details {
+    width: calc(100% - 60px);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    p {
+        margin: 0;
+        color: #868686;
+        line-height: 1.4;
+        display: flex;
+        justify-content: space-between;
+        transition: all ease-in-out 0.3s;
+
+        b {
+            font-weight: 600;
+            transition: all ease-in-out 0.3s;
+            font-size: 14px;
+            color: #000;
+
+            @include breakpoint(desktop) {
+                font-size: 13px;
+            }
+        }
+
+        i {
+            font-size: 11px;
+            font-weight: 400;
+            font-style: normal;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+
+            @include breakpoint(desktop) {
+                font-size: 10px;
+            }
+        }
+
+        small {
+            font-size: 12px;
+
+            @include breakpoint(desktop) {
+                font-size: 11px;
+            }
+        }
+    }
+}
+
+.employer-dashboard {
+    .messenger-area {
+        .msg-type-area form {
+            .chat-send {
+                .fa {
+                    color: $employer-color;
+                }
+            }
+        }
+    }
+}
+
+.messenger-area {
+    width: calc(100% - 375px);
+    padding: 0 13px;
+    position: relative;
+
+    @include breakpoint(desktop) {
+        width: calc(100% - 275px);
+    }
+
+    .messenger-area-wrap {
+        border: 1px solid #dedede;
+        border-radius: 4px;
+        height: 100%;
+    }
+
+    .messenger-area-details {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        border-bottom: 1px solid #dedede;
+
+        figure {
+            height: 50px;
+            margin: 0;
+            width: 50px;
+            border-radius: 100%;
+            margin-right: 10px;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .messenger-msg-wrap {
+        padding: 30px 20px;
+        height: calc(100% - 91px - 87px);
+        position: relative;
+        overflow: auto;
+
+        .msg-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 2;
+
+            &.right-msg {
+                figure {
+                    margin-right: 0px;
+                    margin-left: 10px;
+                }
+
+                .msg-content {
+                    text-align: right;
+
+                    .main-msg {
+
+                        p {
+                            border-top-left-radius: 20px;
+                            border-top-right-radius: 0;
+                            text-align: left;
+                            background-color: #fff;
+                            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+                        }
+                    }
+                }
+
+            }
+
+            figure {
+                height: 50px;
+                width: 50px;
+                margin: 0;
+                margin-right: 10px;
+                border-radius: 100%;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .msg-content {
+                width: calc(100% - 60px);
+                margin-top: 4px;
+
+                .main-msg {
+                    margin-bottom: 5px;
+                    display: inline-block;
+                    width: 100%;
+
+                    &:not(:first-of-type) {
+                        margin-top: 5px;
+                    }
+
+                    p {
+                        margin: 0;
+                        padding: 10px 20px;
+                        color: #000;
+                        background-color: $recruiter-light-color;
+                        border-radius: 20px;
+                        border-top-left-radius: 0;
+                        font-size: 14px;
+                        font-weight: 600;
+                        max-width: 77%;
+                        display: inline-block;
+
+                        @include breakpoint(desktop) {
+                            font-size: 12px;
+                        }
+
+                    }
+                }
+
+                p {
+                    font-size: 13px;
+                    font-weight: 500;
+                    color: #868686;
+                    margin: 0;
+                    margin-left: 15px;
+
+                    @include breakpoint(desktop) {
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .msg-type-area {
+        position: absolute;
+        bottom: 1px;
+        right: 14px;
+        left: 14px;
+        z-index: 5;
+        padding: 0 20px 30px;
+        background-color: #fff;
+        border-bottom-right-radius: 4px;
+        border-bottom-left-radius: 4px;
+
+        form {
+            position: relative;
+
+            input {
+                border: 1px solid #dedede;
+                height: 57px;
+                padding: 15px;
+                font-weight: 600;
+                max-width: calc(100% - 30px);
+                width: 100%;
+                padding-right: 50px;
+
+                @include breakpoint(desktop) {
+                    height: 47px;
+                    padding: 10px;
+                    font-size: 16px;
+                    max-width: calc(100% - 10px);
+                }
+
+                &::placeholder {
+                    font-weight: 400;
+                    letter-spacing: 1px;
+                }
+            }
+
+            .chat-send {
+                background: transparent;
+                border: none;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 5;
+                border-radius: 100%;
+                overflow: hidden;
+
+                .fa {
+                    font-size: 65px;
+                    color: $recruiter-color;
+                    background: #fff;
+
+                    @include breakpoint(desktop) {
+                        font-size: 55px;
+                    }
+                }
+            }
+        }
+    }
+}

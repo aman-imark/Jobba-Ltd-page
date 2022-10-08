@@ -1,0 +1,45 @@
+/*!
+CSS Document
+Project Name: HeyJobba
+Project Description: New Project
+Written By:  Dipak Thakur
+Created On: 01-Feb-2022
+Last Modified:
+*/
+// Vendors and external stylesheets
+@import "vendors/bootstrap";
+@import "vendors/font-awesome";
+@import "vendors/mCustomScrollbar";
+@import "vendors/icon";
+@import "vendors/slick";
+@import "vendors/aos";
+
+// Sass utilities
+@import "helpers/variables";
+@import "helpers/functions";
+@import "helpers/mixins";
+
+// Base stuff
+@import "base/reset";
+@import "base/typography";
+
+// Layout related stylesheets
+@import "layout/header";
+@import "layout/footer";
+@import "layout/sidebar";
+@import "layout/forms";
+@import "layout/style";
+
+// Components and modules
+@import "components/buttons";
+
+// Page-specific stylesheets
+@import "pages/dashboard";
+@import "pages/login";
+@import "pages/jobsearch";
+@import "pages/recruiter-dash";
+@import "pages/messenger";
+
+// Themes
+@import "themes/theme";
+@import "themes/admin";

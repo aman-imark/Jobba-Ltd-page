@@ -1,0 +1,132 @@
+#footer {
+    padding-top: 172px;
+    background: $color-primary;
+    margin-top: -82px;
+    @include breakpoint(desktop){
+       padding-top: 128px;
+    }
+    .ftr-grid {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        .col-grid {
+            width: calc(100% / 4);
+            margin: 0 25px;
+
+            &.ftr {
+                width: 15%;
+                margin: 0 20px 0 0;
+
+                a {
+                    display: block;
+                }
+            }
+
+            &.icon-social {
+                width: 15%;
+            }
+
+            h4 {
+                color: $color-W;
+                font-size: 25px;
+                font-weight: $semi-bold;
+                margin-bottom: 22px;
+                @include breakpoint(desktop){
+                    font-size:21px;
+                }
+            }
+
+            p {
+                color: $color-W;
+                font-size: 16px;
+                font-weight: $regular;
+                margin: 0;
+                @include breakpoint(desktop){
+                    font-size:15px;
+                }
+            }
+
+            ul {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+
+                &.social {
+                    li {
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-right: 8px;
+
+                        a {
+                            font-size: 24px;
+                            @include breakpoint(desktop){
+                                font-size:21px;
+                            }
+                            i {
+                                font-size: 100%;
+                            }
+
+                            &:hover {
+                                i {
+                                    color: $color-secondery;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                li {
+                    margin-bottom: 15px;
+
+                    i {
+                        color: $btn-clr;
+                        font-size: 18px;
+                        margin-right: 10px;
+                        display: inline-block;
+                        @include breakpoint(desktop){
+                            font-size:16px;
+                        }
+                    }
+
+                    p {
+                        display: inline-block;
+                        margin: 0;
+                        vertical-align: top;
+                        width: 82%;
+                    }
+
+                    a {
+                        color: $color-W;
+                        font-size: 16px;
+                        font-weight: $regular;
+                        @include breakpoint(desktop){
+                            font-size:15px;
+                        }
+                        &:hover {
+                            color: $btn-clr;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .copy-write {
+        margin-top: 55px;
+        padding: 15px 0;
+        background: #0f1841;
+        text-align: center;
+        @include breakpoint(desktop){
+            margin-top:35px;
+        }
+        p {
+            color: #d0d0d0;
+            font-size: 16px;
+            margin: 0;
+            @include breakpoint(desktop) {
+                font-size: 14px;
+            }
+        }
+    }
+}

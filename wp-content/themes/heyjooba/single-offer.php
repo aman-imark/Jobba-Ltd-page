@@ -36,7 +36,7 @@ $synopsis = get_field('offer_synopsis',$offer_id);
             <button class="my-btn my-btn-3 dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="true">
                 Action
             </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="" data-popper-placement="bottom-start">
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" data-popper-placement="bottom-start">
                 <li><button type="button" class="" onclick="share_offer_with_candidate(<?php echo $candidate_id; ?>,<?php echo $offer_id; ?>,<?php echo $recruiter_id; ?>)">Share With Candidate</button></li>
                 <li><button type="button" class="" id="accept_offer">Accept Offer</button></li>
                 <li><button type="button" class="" id="reject_offer" >Reject Offer</button></li>

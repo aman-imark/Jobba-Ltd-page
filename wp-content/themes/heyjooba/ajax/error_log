@@ -1,0 +1,121 @@
+[30-Jun-2022 08:08:11 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/job-search-criteria.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/job-search-criteria.php on line 2
+[30-Jun-2022 08:08:17 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/job-search-criteria.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/job-search-criteria.php on line 2
+[22-Jul-2022 06:01:19 UTC] PHP Parse error:  syntax error, unexpected '$last_room_id' (T_VARIABLE) in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/chat-employer.php on line 20
+[22-Jul-2022 06:01:35 UTC] PHP Parse error:  syntax error, unexpected '$last_room_id' (T_VARIABLE) in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/chat-employer.php on line 20
+[22-Jul-2022 06:02:23 UTC] PHP Parse error:  syntax error, unexpected '$last_room_id' (T_VARIABLE) in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/chat-employer.php on line 20
+[22-Jul-2022 06:02:37 UTC] PHP Parse error:  syntax error, unexpected '$last_room_id' (T_VARIABLE) in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/chat-employer.php on line 20
+[22-Jul-2022 06:03:13 UTC] PHP Parse error:  syntax error, unexpected '$last_room_id' (T_VARIABLE) in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/chat-employer.php on line 23
+[22-Jul-2022 06:03:23 UTC] PHP Parse error:  syntax error, unexpected '$last_room_id' (T_VARIABLE) in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/chat-employer.php on line 23
+[22-Jul-2022 06:06:07 UTC] PHP Parse error:  syntax error, unexpected '$last_room_id' (T_VARIABLE) in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/chat-employer.php on line 23
+[22-Jul-2022 06:06:59 UTC] PHP Notice:  Undefined index: emp_message in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/chat-employer.php on line 14
+[22-Jul-2022 06:12:23 UTC] PHP Notice:  Undefined index: emp_message in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/chat-employer.php on line 16
+[22-Jul-2022 06:20:59 UTC] PHP Notice:  Undefined offset: 0 in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/chat-employer.php on line 22
+[22-Jul-2022 06:20:59 UTC] PHP Notice:  Trying to get property 'ID' of non-object in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/chat-employer.php on line 22
+[22-Jul-2022 06:26:52 UTC] PHP Notice:  Undefined index: emp_message in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/chat-employer.php on line 13
+[22-Jul-2022 06:51:37 UTC] PHP Parse error:  syntax error, unexpected '$sender' (T_VARIABLE), expecting ')' in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/chat-employer.php on line 52
+[22-Jul-2022 06:52:00 UTC] PHP Parse error:  syntax error, unexpected '$sender' (T_VARIABLE), expecting ')' in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/chat-employer.php on line 52
+[22-Jul-2022 06:52:26 UTC] PHP Parse error:  syntax error, unexpected '$sender' (T_VARIABLE), expecting ')' in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/chat-employer.php on line 52
+[22-Jul-2022 06:53:12 UTC] PHP Parse error:  syntax error, unexpected '$sender' (T_VARIABLE), expecting ')' in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/chat-employer.php on line 53
+[22-Jul-2022 06:56:59 UTC] WordPress database error Unknown column 'chat_room_id' in 'where clause' for query SELECT * FROM chat WHERE chat_room_id=1
+[22-Jul-2022 06:59:17 UTC] PHP Notice:  Undefined index: emp_message in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/chat-employer.php on line 12
+[22-Jul-2022 06:59:17 UTC] PHP Notice:  Undefined offset: 0 in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/chat-employer.php on line 20
+[22-Jul-2022 06:59:17 UTC] PHP Notice:  Trying to get property 'ID' of non-object in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/chat-employer.php on line 20
+[22-Jul-2022 08:20:02 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 for query SELECT * FROM chat_room WHERE reciever_id=16 and sender_id=
+[22-Jul-2022 08:20:02 UTC] WordPress database error Column 'reciever_id' cannot be null for query INSERT INTO `chat_room` (`sender_id`, `reciever_id`) VALUES ('16', NULL)
+[27-Jul-2022 20:05:43 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 for query SELECT * FROM chat_room WHERE reciever_id=19 and sender_id=
+[29-Jul-2022 22:47:27 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 for query SELECT * FROM chat_room WHERE reciever_id=0 and sender_id=
+[21-Sep-2022 09:47:40 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 for query SELECT * FROM chat_room WHERE sender_id=19 and reciever_id=
+[23-Sep-2022 06:29:27 UTC] PHP Warning:  include(ajax/docusign/autoload.php): failed to open stream: No such file or directory in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/user-to-docusign.php on line 3
+[23-Sep-2022 06:29:27 UTC] PHP Warning:  include(): Failed opening 'ajax/docusign/autoload.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/user-to-docusign.php on line 3
+[23-Sep-2022 06:29:52 UTC] PHP Warning:  include(ajax/docusign/autoload.php): failed to open stream: No such file or directory in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/user-to-docusign.php on line 3
+[23-Sep-2022 06:29:52 UTC] PHP Warning:  include(): Failed opening 'ajax/docusign/autoload.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/user-to-docusign.php on line 3
+[23-Sep-2022 06:37:44 UTC] PHP Warning:  include(ajax/docusign/autoload.php): failed to open stream: No such file or directory in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/user-to-docusign.php on line 3
+[23-Sep-2022 06:37:44 UTC] PHP Warning:  include(): Failed opening 'ajax/docusign/autoload.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/user-to-docusign.php on line 3
+[23-Sep-2022 06:37:44 UTC] PHP Fatal error:  Uncaught Error: Class 'Configuration' not found in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/user-to-docusign.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/user-to-docusign.php on line 7
+[23-Sep-2022 06:39:49 UTC] PHP Warning:  include(ajax/docusign/autoload.php): failed to open stream: No such file or directory in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/user-to-docusign.php on line 6
+[23-Sep-2022 06:39:49 UTC] PHP Warning:  include(): Failed opening 'ajax/docusign/autoload.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/user-to-docusign.php on line 6
+[23-Sep-2022 06:39:49 UTC] PHP Fatal error:  Uncaught Error: Class 'Configuration' not found in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/user-to-docusign.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/user-to-docusign.php on line 10
+[23-Sep-2022 06:41:15 UTC] PHP Warning:  include(ajax/docusign/autoload.php): failed to open stream: No such file or directory in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/user-to-docusign.php on line 6
+[23-Sep-2022 06:41:15 UTC] PHP Warning:  include(): Failed opening 'ajax/docusign/autoload.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/user-to-docusign.php on line 6
+[23-Sep-2022 06:41:15 UTC] PHP Fatal error:  Uncaught Error: Class 'Configuration' not found in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/user-to-docusign.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/user-to-docusign.php on line 10
+[23-Sep-2022 06:42:04 UTC] PHP Warning:  include(/docusign/autoload.php): failed to open stream: No such file or directory in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/user-to-docusign.php on line 6
+[23-Sep-2022 06:42:04 UTC] PHP Warning:  include(): Failed opening '/docusign/autoload.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/user-to-docusign.php on line 6
+[23-Sep-2022 06:42:04 UTC] PHP Fatal error:  Uncaught Error: Class 'Configuration' not found in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/user-to-docusign.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/user-to-docusign.php on line 10
+[23-Sep-2022 06:43:32 UTC] PHP Fatal error:  Uncaught Error: Class 'Configuration' not found in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/user-to-docusign.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/user-to-docusign.php on line 14
+[23-Sep-2022 06:45:57 UTC] PHP Fatal error:  Uncaught Error: Class 'Configuration' not found in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/user-to-docusign.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/user-to-docusign.php on line 14
+[23-Sep-2022 06:47:55 UTC] PHP Fatal error:  Uncaught Error: Class 'Configuration' not found in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/user-to-docusign.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/user-to-docusign.php on line 14
+[23-Sep-2022 06:51:21 UTC] PHP Fatal error:  Uncaught Error: Class 'Configuration' not found in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/user-to-docusign.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/user-to-docusign.php on line 14
+[23-Sep-2022 06:51:46 UTC] PHP Fatal error:  Uncaught Error: Class 'Configuration' not found in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/user-to-docusign.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/user-to-docusign.php on line 14
+[23-Sep-2022 06:52:39 UTC] PHP Warning:  require_once(/docusign/autoload.php): failed to open stream: No such file or directory in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/user-to-docusign.php on line 9
+[23-Sep-2022 06:52:39 UTC] PHP Fatal error:  require_once(): Failed opening required '/docusign/autoload.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/user-to-docusign.php on line 9
+[23-Sep-2022 06:53:05 UTC] PHP Warning:  require_once(/docusign/autoload.php): failed to open stream: No such file or directory in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/user-to-docusign.php on line 9
+[23-Sep-2022 06:53:05 UTC] PHP Fatal error:  require_once(): Failed opening required '/docusign/autoload.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/user-to-docusign.php on line 9
+[23-Sep-2022 06:54:41 UTC] PHP Warning:  require_once(/docusign/autoload.php): failed to open stream: No such file or directory in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/user-to-docusign.php on line 9
+[23-Sep-2022 06:54:41 UTC] PHP Fatal error:  require_once(): Failed opening required '/docusign/autoload.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/user-to-docusign.php on line 9
+[23-Sep-2022 06:55:16 UTC] PHP Warning:  require_once(/docusign/autoload.php): failed to open stream: No such file or directory in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/user-to-docusign.php on line 8
+[23-Sep-2022 06:55:16 UTC] PHP Fatal error:  require_once(): Failed opening required '/docusign/autoload.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/user-to-docusign.php on line 8
+[23-Sep-2022 06:56:01 UTC] PHP Fatal error:  Uncaught Error: Class 'Configuration' not found in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/user-to-docusign.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/user-to-docusign.php on line 15
+[23-Sep-2022 06:56:40 UTC] PHP Fatal error:  Uncaught Error: Class 'Configuration' not found in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/user-to-docusign.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/user-to-docusign.php on line 15
+[23-Sep-2022 07:06:05 UTC] PHP Fatal error:  Uncaught Error: Class 'Configuration' not found in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/user-to-docusign.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/user-to-docusign.php on line 15
+[23-Sep-2022 07:07:26 UTC] PHP Fatal error:  Uncaught Error: Class 'Configuration' not found in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/user-to-docusign.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/user-to-docusign.php on line 15
+[23-Sep-2022 12:22:52 UTC] PHP Parse error:  syntax error, unexpected 'private' (T_PRIVATE), expecting end of file in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/user-to-docusign.php on line 5
+[23-Sep-2022 12:23:40 UTC] PHP Parse error:  syntax error, unexpected 'private' (T_PRIVATE), expecting end of file in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/user-to-docusign.php on line 9
+[23-Sep-2022 12:28:52 UTC] PHP Parse error:  syntax error, unexpected 'private' (T_PRIVATE), expecting end of file in /home/customerdevsites/public_html/heyjooba/wp-content/themes/heyjooba/ajax/user-to-docusign.php on line 8
+[28-Sep-2022 05:26:46 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 for query SELECT * FROM save_candidate WHERE ID=
+[29-Sep-2022 04:21:28 UTC] WordPress database error Column 'envelopeId' cannot be null for query INSERT INTO `contract_data_api` (`envelopeId`, `date_time`, `data`, `status`, `candidate_id`, `offer_id`) VALUES (NULL, '2022-09-29 04:21:28', '{\"errorCode\":\"USER_AUTHENTICATION_FAILED\",\"message\":\"One or both of Username and Password are invalid. Invalid access token\"}', 'sent', '84', '906')
+[29-Sep-2022 04:23:24 UTC] WordPress database error Column 'envelopeId' cannot be null for query INSERT INTO `contract_data_api` (`envelopeId`, `date_time`, `data`, `status`, `candidate_id`, `offer_id`) VALUES (NULL, '2022-09-29 04:23:24', '{\"errorCode\":\"USER_AUTHENTICATION_FAILED\",\"message\":\"One or both of Username and Password are invalid. Invalid access token\"}', 'sent', '84', '906')
+[29-Sep-2022 04:24:19 UTC] WordPress database error Column 'envelopeId' cannot be null for query INSERT INTO `contract_data_api` (`envelopeId`, `date_time`, `data`, `status`, `candidate_id`, `offer_id`) VALUES (NULL, '2022-09-29 04:24:19', '{\"errorCode\":\"USER_AUTHENTICATION_FAILED\",\"message\":\"One or both of Username and Password are invalid. Invalid access token\"}', 'sent', '84', '906')
+[29-Sep-2022 04:25:12 UTC] WordPress database error Column 'envelopeId' cannot be null for query INSERT INTO `contract_data_api` (`envelopeId`, `date_time`, `data`, `status`, `candidate_id`, `offer_id`) VALUES (NULL, '2022-09-29 04:25:12', '{\"errorCode\":\"USER_AUTHENTICATION_FAILED\",\"message\":\"One or both of Username and Password are invalid. Invalid access token\"}', 'sent', '84', '906')
+[30-Sep-2022 06:56:52 UTC] WordPress database error Column 'envelopeId' cannot be null for query INSERT INTO `contract_data_api` (`envelopeId`, `date_time`, `data`, `status`, `candidate_id`, `offer_id`) VALUES (NULL, '2022-09-30 06:56:52', '{\"errorCode\":\"USER_AUTHENTICATION_FAILED\",\"message\":\"One or both of Username and Password are invalid. Invalid access token\"}', 'sent', '84', '906')
+[30-Sep-2022 06:59:35 UTC] WordPress database error Column 'envelopeId' cannot be null for query INSERT INTO `contract_data_api` (`envelopeId`, `date_time`, `data`, `status`, `candidate_id`, `offer_id`) VALUES (NULL, '2022-09-30 06:59:35', '{\"errorCode\":\"USER_AUTHENTICATION_FAILED\",\"message\":\"One or both of Username and Password are invalid. Invalid access token\"}', 'sent', '84', '906')
+[30-Sep-2022 07:01:07 UTC] WordPress database error Column 'envelopeId' cannot be null for query INSERT INTO `contract_data_api` (`envelopeId`, `date_time`, `data`, `status`, `candidate_id`, `offer_id`) VALUES (NULL, '2022-09-30 07:01:07', '{\"errorCode\":\"USER_AUTHENTICATION_FAILED\",\"message\":\"One or both of Username and Password are invalid. Invalid access token\"}', 'sent', '84', '906')
+[30-Sep-2022 07:06:47 UTC] WordPress database error Column 'envelopeId' cannot be null for query INSERT INTO `contract_data_api` (`envelopeId`, `date_time`, `data`, `status`, `candidate_id`, `offer_id`) VALUES (NULL, '2022-09-30 07:06:47', '{\"errorCode\":\"USER_AUTHENTICATION_FAILED\",\"message\":\"One or both of Username and Password are invalid. Invalid access token\"}', 'sent', '84', '906')
+[30-Sep-2022 07:07:06 UTC] WordPress database error Column 'envelopeId' cannot be null for query INSERT INTO `contract_data_api` (`envelopeId`, `date_time`, `data`, `status`, `candidate_id`, `offer_id`) VALUES (NULL, '2022-09-30 07:07:06', '{\"errorCode\":\"USER_AUTHENTICATION_FAILED\",\"message\":\"One or both of Username and Password are invalid. Invalid access token\"}', 'sent', '84', '906')
+[30-Sep-2022 07:07:47 UTC] WordPress database error Column 'envelopeId' cannot be null for query INSERT INTO `contract_data_api` (`envelopeId`, `date_time`, `data`, `status`, `candidate_id`, `offer_id`) VALUES (NULL, '2022-09-30 07:07:47', '{\"errorCode\":\"USER_AUTHENTICATION_FAILED\",\"message\":\"One or both of Username and Password are invalid. Invalid access token\"}', 'sent', '84', '906')
+[30-Sep-2022 07:09:14 UTC] WordPress database error Column 'envelopeId' cannot be null for query INSERT INTO `contract_data_api` (`envelopeId`, `date_time`, `data`, `status`, `candidate_id`, `offer_id`) VALUES (NULL, '2022-09-30 07:09:14', '{\"errorCode\":\"USER_AUTHENTICATION_FAILED\",\"message\":\"One or both of Username and Password are invalid. Invalid access token\"}', 'sent', '84', '906')
+[30-Sep-2022 07:16:49 UTC] WordPress database error Column 'envelopeId' cannot be null for query INSERT INTO `contract_data_api` (`envelopeId`, `date_time`, `data`, `status`, `candidate_id`, `offer_id`) VALUES (NULL, '2022-09-30 07:16:49', '{\"errorCode\":\"USER_AUTHENTICATION_FAILED\",\"message\":\"One or both of Username and Password are invalid. Invalid access token\"}', 'sent', '84', '906')
